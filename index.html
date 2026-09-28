@@ -35,16 +35,110 @@
 </p>
 <p>
   <strong>Availability</strong><br>
-Gray Morrison's music is availabe on all major platforms:<br>
-- [Spotify](https://open.spotify.com/artist/2RCcygIvV7oOJdNELSZ9il?si=tEM8-9FxRLewTgsLANXkwQ)
-- [Apple Music](YOUR_APPLE_MUSIC_LINK)
-- [iTunes](YOUR_ITUNES_LINK)
-- [YouTube](YOUR_YOUTUBE_LINK)
-- [Amazon Music](YOUR_AMAZON_MUSIC_LINK)
-- [Deezer](YOUR_DEEZER_LINK)
-- [Tidal](YOUR_TIDAL_LINK)
-**[Listen on all platforms via HyperFollow](YOUR_HYPERFOLLOW_LINK)**
----
+<style>
+  .gm-music {
+    max-width: 720px;
+    margin: 2rem auto;
+    padding: clamp(24px, 5vw, 48px);
+    border-radius: 28px;
+    background: #17201b;
+    color: #f5f7f0;
+    font-family: system-ui, sans-serif;
+  }
+
+  .gm-music .eyebrow {
+    color: #c9ec83;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+  }
+
+  .gm-music h2 {
+    margin: 12px 0;
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    line-height: 1.1;
+  }
+
+  .gm-music .intro,
+  .gm-music .note {
+    color: #b8c4ba;
+  }
+
+  .gm-platforms {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+    margin: 28px 0;
+  }
+
+  .gm-platforms a {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 16px 18px;
+    border: 1px solid #405046;
+    border-radius: 14px;
+    background: #233027;
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.2s, transform 0.2s;
+  }
+
+  .gm-platforms a:hover {
+    background: #304337;
+    transform: translateY(-2px);
+  }
+
+  .gm-platforms a span {
+    color: #c9ec83;
+  }
+
+  .gm-all {
+    display: inline-block;
+    padding: 16px 22px;
+    border-radius: 999px;
+    background: #c9ec83;
+    color: #17201b;
+    font-weight: 800;
+    text-decoration: none;
+  }
+
+  .gm-all:hover {
+    background: #ddffa0;
+  }
+
+  .gm-music .note {
+    margin: 22px 0 0;
+    font-size: 0.9rem;
+  }
+
+  @media (max-width: 520px) {
+    .gm-platforms { grid-template-columns: 1fr; }
+  }
+</style>
+
+<section class="gm-music" aria-labelledby="gm-title">
+  <div class="eyebrow">GRAY MORRISON · MUSIC</div>
+  <h2 id="gm-title">Listen wherever you like.</h2>
+  <p class="intro">Choose your favourite platform, or find them all in one place.</p>
+
+  <div class="gm-platforms">
+    <a href="https://open.spotify.com/artist/2RCcygIvV7oOJdNELSZ9il?si=tEM8-9FxRLewTgsLANXkwQ">Spotify <span>↗</span></a>
+    <a href="YOUR_APPLE_MUSIC_LINK">Apple Music <span>↗</span></a>
+    <a href="YOUR_ITUNES_LINK">iTunes <span>↗</span></a>
+    <a href="YOUR_YOUTUBE_LINK">YouTube <span>↗</span></a>
+    <a href="YOUR_AMAZON_MUSIC_LINK">Amazon Music <span>↗</span></a>
+    <a href="YOUR_DEEZER_LINK">Deezer <span>↗</span></a>
+    <a href="YOUR_TIDAL_LINK">Tidal <span>↗</span></a>
+  </div>
+
+  <a class="gm-all" href="YOUR_HYPERFOLLOW_LINK">
+    Listen on all platforms ↗
+  </a>
+
+  <p class="note">You can also search “Gray Morrison” on your favourite platform.</p>
+</section>
 </p>
     </main>
   </body>
