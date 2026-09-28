@@ -36,108 +36,75 @@
 <p>
   <strong>Availability</strong><br>
 <style>
-  .gm-music {
-    max-width: 720px;
-    margin: 2rem auto;
-    padding: clamp(24px, 5vw, 48px);
-    border-radius: 28px;
+  .gm-listen {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 340px;
+    padding: 16px;
+    border-radius: 16px;
     background: #17201b;
     color: #f5f7f0;
     font-family: system-ui, sans-serif;
   }
 
-  .gm-music .eyebrow {
-    color: #c9ec83;
-    font-size: 0.75rem;
-    font-weight: 700;
-    letter-spacing: 0.18em;
+  .gm-listen h2 {
+    margin: 0 0 3px;
+    font-size: 1.15rem;
   }
 
-  .gm-music h2 {
-    margin: 12px 0;
-    font-size: clamp(2rem, 5vw, 3.5rem);
-    line-height: 1.1;
-  }
-
-  .gm-music .intro,
-  .gm-music .note {
+  .gm-listen p {
+    margin: 0 0 14px;
     color: #b8c4ba;
+    font-size: 0.8rem;
   }
 
-  .gm-platforms {
+  .gm-listen-links {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 12px;
-    margin: 28px 0;
+    gap: 7px;
   }
 
-  .gm-platforms a {
-    display: flex;
-    justify-content: space-between;
-    gap: 12px;
-    padding: 16px 18px;
-    border: 1px solid #405046;
-    border-radius: 14px;
-    background: #233027;
+  .gm-listen-links a {
+    padding: 9px 10px;
+    border-radius: 8px;
+    background: #2b3930;
     color: #fff;
+    font-size: 0.8rem;
     font-weight: 600;
+    text-align: center;
     text-decoration: none;
-    transition: background 0.2s, transform 0.2s;
   }
 
-  .gm-platforms a:hover {
-    background: #304337;
-    transform: translateY(-2px);
+  .gm-listen-links a:hover,
+  .gm-listen-links a:focus-visible {
+    background: #405747;
   }
 
-  .gm-platforms a span {
-    color: #c9ec83;
-  }
-
-  .gm-all {
-    display: inline-block;
-    padding: 16px 22px;
-    border-radius: 999px;
+  .gm-listen-links .gm-hyperfollow {
     background: #c9ec83;
     color: #17201b;
-    font-weight: 800;
-    text-decoration: none;
   }
 
-  .gm-all:hover {
+  .gm-listen-links .gm-hyperfollow:hover,
+  .gm-listen-links .gm-hyperfollow:focus-visible {
     background: #ddffa0;
-  }
-
-  .gm-music .note {
-    margin: 22px 0 0;
-    font-size: 0.9rem;
-  }
-
-  @media (max-width: 520px) {
-    .gm-platforms { grid-template-columns: 1fr; }
   }
 </style>
 
-<section class="gm-music" aria-labelledby="gm-title">
-  <div class="eyebrow">GRAY MORRISON · MUSIC</div>
-  <h2 id="gm-title">Listen wherever you like.</h2>
-  <p class="intro">Choose your favourite platform, or find them all in one place.</p>
+<section class="gm-listen" aria-label="Listen to Gray Morrison">
+  <h2>Gray Morrison</h2>
+  <p>Listen on your favourite platform</p>
 
-  <div class="gm-platforms">
-    <a href="https://open.spotify.com/artist/2RCcygIvV7oOJdNELSZ9il?si=tEM8-9FxRLewTgsLANXkwQ">Spotify <span>↗</span></a>
-    <a href="YOUR_APPLE_MUSIC_LINK">Apple Music <span>↗</span></a>
-    <a href="YOUR_ITUNES_LINK">iTunes <span>↗</span></a>
-    <a href="YOUR_YOUTUBE_LINK">YouTube <span>↗</span></a>
-    <a href="YOUR_AMAZON_MUSIC_LINK">Amazon Music <span>↗</span></a>
-    <a href="YOUR_DEEZER_LINK">Deezer <span>↗</span></a>
-    <a href="YOUR_TIDAL_LINK">Tidal <span>↗</span></a>
+  <div class="gm-listen-links">
+    <a href="https://open.spotify.com/artist/2RCcygIvV7oOJdNELSZ9il?si=tEM8-9FxRLewTgsLANXkwQ">Spotify</a>
+    <a href="YOUR_APPLE_MUSIC_LINK">Apple Music</a>
+    <a href="YOUR_ITUNES_LINK">iTunes</a>
+    <a href="YOUR_YOUTUBE_LINK">YouTube</a>
+    <a href="YOUR_AMAZON_MUSIC_LINK">Amazon Music</a>
+    <a href="YOUR_DEEZER_LINK">Deezer</a>
+    <a href="YOUR_TIDAL_LINK">Tidal</a>
+    <a class="gm-hyperfollow" href="YOUR_HYPERFOLLOW_LINK">All platforms ↗</a>
   </div>
-
-  <a class="gm-all" href="YOUR_HYPERFOLLOW_LINK">
-    Listen on all platforms ↗
-  </a>
-
-  <p class="note">You can also search “Gray Morrison” on your favourite platform.</p>
 </section>
 </p>
     </main>
